@@ -6,9 +6,9 @@
 
 public interface I_Stack{
 
-	public void push(Object t);
-	public Object pop();
-	public boolean isEmpty();
-	public int size();
-	public Object get();
+	public void Push(Object t);
+	public Object Pop();
+	public boolean IsEmpty();
+	public int Size();
+	public Object Get();
 }
