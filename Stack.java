@@ -3,7 +3,7 @@
 *@version: 2.0
 *@author: Robbin Woods 15201, Steven Rubio 15044
 *****************************/
-
+import java.util.*;
 public class Stack implements I_Stack{
 	private Vector vector1;
 
