@@ -14,10 +14,11 @@ public class Calculadora implements I_Calculadora{
 
 	@Override
 	public String leerArchivo(String direccion) {
-		FileInputStream dircadena = new FileInputStream(direccion);
-		DataInputStream lineas = new DataInputStream(dircadena);
+		FileInputStream dirtxt = new FileInputStream(direccion);
+		DataInputStream lineas = new DataInputStream(dirtxt);
 		BufferedReader memoriabuf = new BufferedReader(new InputStreamReader(lineas));
 		operaciones=buffer.readLine();
+		lineas.close();
 		return operaciones;
 		
 		
