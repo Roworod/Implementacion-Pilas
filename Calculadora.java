@@ -1,3 +1,4 @@
+import java.io.*;
 
 public class Calculadora implements I_Calculadora{
 
@@ -13,8 +14,15 @@ public class Calculadora implements I_Calculadora{
 
 	@Override
 	public String leerArchivo(String direccion) {
+		FileInputStream dircadena = new FileInputStream(direccion);
+		DataInputStream lineas = new DataInputStream(dircadena);
+		BufferedReader memoriabuf = new BufferedReader(new InputStreamReader(lineas));
+		operaciones=buffer.readLine();
+		return operaciones;
+		
+		
 		// TODO Auto-generated method stub
-		return null;
+		//por que nul?>>>>>>return null;
 	}
 
 	public Stack getMiPila() {
