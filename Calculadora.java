@@ -1,3 +1,11 @@
+
+/**
+*Calculadora, Esta se encarga de realizar los calculos para mostar el resultado del .txt con las instrucciones
+*@version: 2.0
+*@author: Robbin Woods 15201, Steven Rubio 15044, Erick Bautista 15192
+*@since 2016-07-24
+*/
+
 import java.io.*;
 
 public class Calculadora implements I_Calculadora{
@@ -6,13 +14,22 @@ public class Calculadora implements I_Calculadora{
 	private String operaciones;
 	
 	
-	@Override
+	/**
+	 * Este metodo se encarga de leer un string e identidicar los numeros y operaciones, para hacer uso de la pila y retornar 
+	 * el resultado de la operacion
+	 * @param String Recibe el string de la instruccion a realizar
+	 * @return int regresa el resutlado de la operaciones
+	 */
 	public int calcular(String vector) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
+	/**
+	 * Este metodo se encarga de leer un archivo de texto y almacenar en un string su contenido
+	 * @param String, Recibe como parametro la direccion donde se encuentra el .txt con la operaciones a realizar
+	 * @return String retorna el string que se encontraba en el .txt
+	 */
 	public String leerArchivo(String direccion) {
 		FileInputStream dirtxt = new FileInputStream(direccion);
 		DataInputStream lineas = new DataInputStream(dirtxt);
