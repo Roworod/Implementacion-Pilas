@@ -21,9 +21,6 @@ public class Calculadora implements I_Calculadora{
 	 * @return int regresa el resutlado de la operaciones
 	 */
 	public int calcular(String vector) {
-		// TODO Auto-generated method stub
-		
-		//aqui empieza mi codigo 
 		for(int posicion=0;posicion<vector.length();posicion++)
 		{
 			String caracter=vector.substring(posicion,posicion+1);
@@ -34,42 +31,39 @@ public class Calculadora implements I_Calculadora{
 					}
 				if (caracter.equals("*") )
 					{
-					int numero1=mipila.pop();
-					int numero2=mipila.pop();
-					int intresultado=numero*numero2;
+					int numero1= (int)miPila.pop();
+					int numero2= (int)miPila.pop();
+					int intresultado=(numero1*numero2);
 					miPila.push(intresultado);
 					}
 					
 				if (caracter.equals("/") )
 					{
-					int numero1=mipila.pop();
-					int numero2=mipila.pop();
-					int intresultado=numero/numero2;
+					int numero1=(int)miPila.pop();
+					int numero2=(int)miPila.pop();
+					int intresultado=(numero1/numero2);
 					miPila.push(intresultado);
 					}
 				
 				if (caracter.equals("+") )
 					{
-					int numero1=mipila.pop();
-					int numero2=mipila.pop();
-					int intresultado=numero+numero2;
+					int numero1=(int)miPila.pop();
+					int numero2=(int)miPila.pop();
+					int intresultado=(numero1+numero2);
 					miPila.push(intresultado);
 					}
 					
 				if (caracter.equals("-") )
 					{
-					int numero1=mipila.pop();
-					int numero2=mipila.pop();
-					int intresultado=numero-numero2;
+					int numero1=(int)miPila.pop();
+					int numero2=(int)miPila.pop();
+					int intresultado=(numero1-numero2);
 					miPila.push(intresultado);
 					}	
-					
-				return intresultado;	
 			
 		}
+		return (int)miPila.pop();	
 		
-		//aqui termina mi codigo
-		//return 0;
 	}
 
 	/**
