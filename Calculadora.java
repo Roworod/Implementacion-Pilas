@@ -13,6 +13,15 @@ public class Calculadora implements I_Calculadora{
 	private Stack miPila;
 	private String operaciones;
 	
+	/**
+	 * Constructor
+	 */
+	public Calculadora(){
+		this.miPila = new Stack();
+		this.operaciones = "xxx";
+		
+	}
+	
 	
 	/**
 	 * Este metodo se encarga de leer un string e identidicar los numeros y operaciones, para hacer uso de la pila y retornar 
