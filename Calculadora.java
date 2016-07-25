@@ -15,7 +15,7 @@ public class Calculadora implements I_Calculadora{
 	
 	public Calculadora(){
 		this.miPila = new Stack();
-		this.operaciones = "2 2 + 3 * ";
+		//*this.operaciones = "2 2 + 3 * ";
 		
 	}
 	
@@ -79,10 +79,10 @@ public class Calculadora implements I_Calculadora{
 	 * @param String, Recibe como parametro la direccion donde se encuentra el .txt con la operaciones a realizar
 	 * @return String retorna el string que se encontraba en el .txt
 	 */
-	public String leerArchivo(String direccion) {
+	public String leerArchivo(String direccionx) {
 		FileInputStream dirtxt;
 		try {
-			dirtxt = new FileInputStream(direccion);
+			dirtxt = new FileInputStream(direccionx);
 			DataInputStream lineas = new DataInputStream(dirtxt);
 			BufferedReader memoriabuf = new BufferedReader(new InputStreamReader(lineas));
 			try {
