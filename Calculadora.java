@@ -80,26 +80,16 @@ public class Calculadora implements I_Calculadora{
 	 * @return String retorna el string que se encontraba en el .txt
 	 */
 	public String leerArchivo(String direccionx) {
-		FileInputStream dirtxt;
 		try {
+			FileInputStream dirtxt;
 			dirtxt = new FileInputStream(direccionx);
 			DataInputStream lineas = new DataInputStream(dirtxt);
 			BufferedReader memoriabuf = new BufferedReader(new InputStreamReader(lineas));
-			try {
-				operaciones=memoriabuf.readLine();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			try {
-				lineas.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			operaciones=memoriabuf.readLine();
+			lineas.close();
+		}catch(Exception e){
+			System.err.println("Error Fatal");
+			
 		}
 	
 		return operaciones;
