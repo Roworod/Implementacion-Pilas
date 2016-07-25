@@ -8,10 +8,12 @@
 
 import java.util.*;
 public class Stack implements I_Stack{
-	private Vector vector1;
+	private Vector<Object> vector1;
 	
 	public Stack(){
-		this.vector1.clear();
+		vector1 = new Vector<Object>();
+		vector1.add(0);
+		
 	}
 	
 	 /**
