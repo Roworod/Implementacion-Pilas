@@ -13,12 +13,9 @@ public class Calculadora implements I_Calculadora{
 	private Stack miPila;
 	private String operaciones;
 	
-	/**
-	 * Constructor
-	 */
 	public Calculadora(){
 		this.miPila = new Stack();
-		this.operaciones = "xxx";
+		this.operaciones = "2 2 + 3 * ";
 		
 	}
 	
@@ -37,6 +34,7 @@ public class Calculadora implements I_Calculadora{
 					{
 					int intcaracter = Integer.parseInt(caracter);
 					miPila.push(intcaracter);
+					/**System.out.println("Numero");*/
 					}
 				if (caracter.equals("*") )
 					{
@@ -71,7 +69,8 @@ public class Calculadora implements I_Calculadora{
 					}	
 			
 		}
-		return (int)miPila.pop();	
+		int resultado = (int)miPila.pop();
+		return 	resultado;
 		
 	}
 
