@@ -40,7 +40,7 @@ public class main {
 		 */
 		try
 		{
-			System.out.println("Ingrese el nombre del archivo que contiene la operacion (incluir el .txt) ");
+			System.out.println("Ingrese el nombre del archivo que contiene la operacion (incluir el .txt)\n recuerde que debe trabaja con valores int por lo cual\n este programa no trabaja valores con decimales");
 			direccion= usuario.next();
 			
 			
