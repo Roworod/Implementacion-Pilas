@@ -1,0 +1,3 @@
+se logra observar en la grafica que el algoritmo en ningun momento de su ejecucion
+presenta algun pico o caida en todo su tiempo de vida. esto puede ser debido a que
+las operaciones que se realizan son simplemente de asignacion o aritmeticas simples
