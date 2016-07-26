@@ -8,6 +8,7 @@
 
 import java.util.*;
 public class Stack implements I_Stack{
+	
 	private Vector<Object> vector1;
 	
 	public Stack(){
@@ -55,21 +56,17 @@ public class Stack implements I_Stack{
 		return vector1.isEmpty();
 	}
 
-	@Override
+	/**
+	 * Metodo get, sirve para obtener acceso a un atributo
+	 * @param no recibe
+	 * @return Regressa un valor especifico, en este caso null 
+	 */
 	public Object get() {
 		Object t = vector1.get(vector1.size()-2);
 		return t;
-	}
+		}
 	
-	/* */
-	public void setVector(String vector){
-		
-	}
-
-	public String getVector(){
-		return null;
-
 	}
 
 
-}
+
