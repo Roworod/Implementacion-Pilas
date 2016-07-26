@@ -82,7 +82,9 @@ public class Calculadora implements I_Calculadora{
 	public String leerArchivo(String direccionx) {
 		try {
 			FileInputStream dirtxt;
-			dirtxt = new FileInputStream(direccionx);
+			String path = new java.io.File(".").getCanonicalPath();
+			path = path + "\\"+ direccionx;
+			dirtxt = new FileInputStream(path);
 			DataInputStream lineas = new DataInputStream(dirtxt);
 			BufferedReader memoriabuf = new BufferedReader(new InputStreamReader(lineas));
 			operaciones=memoriabuf.readLine();
@@ -96,7 +98,7 @@ public class Calculadora implements I_Calculadora{
 		
 		
 		// TODO Auto-generated method stub
-		//por que nul?>>>>>>return null;
+		
 	}
 
 	public Stack getMiPila() {
