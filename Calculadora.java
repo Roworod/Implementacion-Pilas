@@ -100,19 +100,34 @@ public class Calculadora implements I_Calculadora{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	/**
+	 *getMiPila retorna miPila 
+	 */ 
 	public Stack getMiPila() {
 		return miPila;
 	}
-
+	
+	/**
+	 * setMiPila establece el valor de miPila
+	 */
+	
 	public void setMiPila(Stack miPila) {
 		this.miPila = miPila;
 	}
-
+	
+	/**
+	 * getOperaciones retorna la cadena de operaciones 
+	 */
+	
 	public String getOperaciones() {
 		return operaciones;
 	}
-
+	
+	/**
+	 *setOperaciones setea la cadena Operaciones 
+	 */
+	
 	public void setOperaciones(String operaciones) {
 		this.operaciones = operaciones;
 	}
